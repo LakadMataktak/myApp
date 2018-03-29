@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="warn">
+    <ion-title >myApp</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentpop($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+  </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/imgs/2.jpg"/>
+    <div class="card-title">Assign</div>
+    <div class="card-subtitle"></div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/3.jpg"/>
+    <div class="card-title">Scan</div>
+    <div class="card-subtitle"></div>
+  </ion-card>
+
+  <ion-card (click)="nav_assignmentlist()">
+    <img src="assets/imgs/4.jpg"/>
+    <div class="card-title">Order List</div>
+    <div class="card-subtitle"></div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/1.jpg"/>
+    <div class="card-title">Delivered</div>
+    <div class="card-subtitle"></div>
+  </ion-card>
+
+</ion-content>
